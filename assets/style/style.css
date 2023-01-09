@@ -1,0 +1,48 @@
+.travel-img {
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.hover {
+  transition: transform 2s;
+}
+.hover:hover {
+  transform: scale(0.92, 0.92);
+}
+.homesection-image img {
+  height: 600px;
+  transition: transform 2s;
+  cursor: pointer;
+  overflow: hidden;
+}
+.homesection-image img:hover {
+  transform: scale(1.02, 1.02);
+}
+.active {
+  font-weight: bold;
+}
+.Portfolio-section-image {
+  font-size: 20px;
+}
+.travel-cards {
+  transition: transform 2s;
+}
+.travel-cards:hover {
+  transform: scale(0.95, 0.95);
+}
+.footer-container div:last-child div:not(:last-child) ul {
+  margin-right: 40px;
+}
+.footer-container div:last-child a{
+  text-decoration: none;
+  color: #fff;
+}
+.container{
+  width: 100px;
+  margin: 0;
+}
+@media screen and (max-width: 992px) {
+  .Portfolio-section-image {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style/global.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-info d-lg-flex justify-content-lg-between h-100 py-4"
+      >
+        <div class="d-flex align-items-center">
+          <img
+            alt="travel"
+            src="https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg"
+            class="travel-img mr-3"
+          />
+          <a class="text-white navbar-brand" href="#">Trovolic</a>
+        </div>
+
+        <!-- Mobile menu button started -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Mobile menu button ended -->
+
+        <div
+          class="collapse navbar-collapse d-lg-flex justify-content-lg-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item px-3 active">
+              <a class="text-white nav-link hover" href="./index.html"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="text-white nav-link hover" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="text-white nav-link hover" href="#">Blog</a>
+            </li>
+            <li class="nav-item px-3">
+              <button
+                type="button"
+                class="btn btn-outline-light border-primary"
+                data-toggle="modal"
+                data-target="#registermodal"
+              >
+                Register
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="jumbotron text-center bg-transparent">
+          <h1 class="display-4 mb-3 font-weight-bold">Hello, world!</h1>
+          <p class="h4 font-weight-light mb-5">
+            Spend less time and money planning for your next trip, whether it's
+            a business trip, a honeymoon, a solo tour, or a family vacation, it
+            doesn't matter!
+          </p>
+          <div class="homesection-image d-flex justify-content-center">
+            <img
+              alt="travolic"
+              src="https://img.freepik.com/free-photo/travel-concept-with-landmarks_23-2149153256.jpg?w=2000"
+            />
+          </div>
+          <a
+            class="btn btn-primary btn-lg mt-4"
+            href="./portfolio.html"
+            role="button"
+            >Get Portfolio Page</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer id="Portfolio-footer">
+      <div class="jumbotron jumbotron-fluid footer-container d-flex flex-column justify-content-between flex-md-row bg-success text-white p-4 m-0">
+          <div class="container">
+            <h1 class="h2">Travolic</h1>
+          </div>
+          <div class="d-flex">
+          <div>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-primary"><a href="#">Contact Us :</a></li>
+              <li class="list-group-item bg-transparent border-primary"><a href="#">With instagram</a></li>
+              <li class="list-group-item bg-transparent border-primary"><a href="#">With linkedin</a></li>
+            </ul>
+          </div>
+          <div>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-transparent border-primary"><a href="#">Contact Us :</a></li>
+                  <li class="list-group-item bg-transparent border-primary"><a href="#">With instagram</a</li>
+                  <li class="list-group-item bg-transparent border-primary"><a href="#">With linkedin</a></li>
+                </ul>
+              </div>
+              <div>
+                  <ul class="list-group list-group-flush mr-2">
+                      <li class="list-group-item bg-transparent border-primary"><a href="#">Contact Us :</a></li>
+                      <li class="list-group-item bg-transparent border-primary"><a href="#">With instagram</a</li>
+                      <li class="list-group-item bg-transparent border-primary"><a href="#">With linkedin</a></li>
+                    </ul>
+                  </div>
+              </div>
+      </div>
+  </footer>
+
+    <!-- Modal for Register started  -->
+
+    <!-- Vertically centered modal -->
+    <div
+      class="modal fade"
+      id="registermodal"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title w-100 text-center text-success"
+              id="staticBackdropLabel"
+            >
+              Register
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-outline-success btn-block">
+                Sign in
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Register ended  -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
